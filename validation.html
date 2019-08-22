@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>MyProfile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+body{
+      background-image:url("wallpaper.png");
+	  background-repeat: no repeat;
+	  background-size:1550px 800px;
+    }
+img{
+     border-radius: 50%;
+	 width: 180px;
+	 position: absolute;
+	 top:20px;
+	 left:100px;
+	 border-style: 20px dashed purple;
+   }
+#abc{
+    background-color: purple;
+    width: 190px;
+	height: 350px;
+	border: 15px dotted #purple;
+	padding: 20px;
+	margin-top: 0px;
+	margin-left: 70px;
+	border-radius: 10%;
+   }
+#xyz{
+    background-color:purple;
+    width: 10px;
+	height: 35px;
+	padding: 10px;
+	margin-top: -450px;
+	margin-left: 164px;
+    }
+#edu{
+    background-color: purple;
+    width: 600px;
+	height: 100px;
+	margin-top: 0px;
+	margin-left: 400px; 
+	border-radius:10px;
+	padding:5px;
+    }
+.bubble{
+          width: 250px;
+          height: 100px;
+		  padding: 10px;
+		  background: purple;
+		  color: white;
+		  position: absolute;
+		  margin-top:50px;
+		  margin-left:400px;
+		  border-radius: 10px;
+		  position: relative;
+		   
+	   }
+.bubble:before{
+                 content:"";
+				 position: absolute;
+				 width: 0;
+				 height:0;
+				 position: absolute;
+                 border-left: 10px solid purple;
+                 border-right: 10px solid transparent;
+                 border-top: 10px solid purple;
+                 border-bottom: 10px solid transparent;
+                 left: -20px;
+                 top: 16px;
+				 transform:rotate(90deg);
+              }
+.interest{
+          width: 250px;
+          height: 210px;
+		  padding: 10px;
+		  background: purple;
+		  color: white;
+		  position: absolute;
+		  margin-top:30px;
+		  margin-left:400px;
+		  border-radius: 10px
+		 }			 
+.excurr{
+          width: 250px;
+          height: 210px;
+		  padding: 10px;
+		  background: purple;
+		  color: white;
+		  position: absolute;
+		  margin-top:30px;
+		  margin-left:740px;
+		  border-radius: 10px
+		 }			
+.skills{
+    background-color: purple;
+	color:white;
+    width: 210px;
+	height: 350px;
+	border: 15px dotted #purple;
+	padding: 20px;
+	padding: 30px;
+	margin-top: -150px;
+	margin-left: 1080px;
+	border-radius: 10%;
+   }		 
+#icon2{
+       position: absolute;
+       left: 20px;
+	   color:red;
+	   font-size: 50px;
+     }
+input[type=text]{
+                  background-color: purple;
+				  color: white;
+				  border: 1px solid purple;
+				  
+                }
+input.num{
+           width:70%;
+          }
+::placeholder{
+               color:white;
+             }
+.button{
+          background-color: purple;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          cursor: pointer;
+		  margin-top: 0px;
+		  margin-left: 650px;
+       }
+</style>
+<script>
+  function numvalidation()
+  {
+    var num=document.getElementById("phone").value;
+	if(isNaN(num)||num.length!=10)
+	 {
+	   alert("Invalid Number");
+	   return false;
+	 }
+	else  return true;
+  }
+  function mailvalidation()
+  {
+    var mail=document.getElementById("email").value;
+	var regex=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+	if(mail.match(regex)) return true;
+	else 
+	{
+	  alert("Invaid Email");
+	  return false;
+	}
+    
+  }
+</script>
+</head>
+<body>
+<div class="bubble" style="font-size:17px;">Hi there!!<br>
+I am a S.E. computer engineering student having objective
+ to keep up with the cutting edge of technology and enhance my technical skills. </div>
+<h2 style="margin-left:400px; margin-top:30px; color: purple; font-size:40px;">MANALI MANIYAR
+<font style="font-size:25px;">  (Aspiring Engineer)</font></h2> 
+<img src="manali1.jpg" />
+
+<div id="edu">
+   <font color="white" size="4px"><b>QUALIFICATION</b></font> 
+   <font color="white"><br><br><i class="fas fa-school"></i>- Thakur Public School
+   <br><i class="fas fa-university"></i>- Prakash College Of Science And Commerce
+   <br><i class="fas fa-graduation-cap"></i>- Dwarkadas J.Sanghvi College Of Engineering </font>
+</div>
+
+
+<div class="interest">
+<h3>INTEREST</h3>
+<i class="fas fa-headphones" style="font-size:70px;color:white;"></i>
+<i class="fas fa-camera-retro" style="font-size:70px;margin-left:60px;"></i><br><br>
+<i class="fas fa-chalkboard-teacher" style="font-size:70px;color:white;"></i>
+<i class="fas fa-hiking" style="font-size:70px;margin-left:60px;color:white;"></i>
+
+</div>
+
+
+<div class="excurr">
+<h3>EXTRACURRICULAR ACTIVITES</h3>
+<li>learning mySQL and advanced php from Max Computer Education</li>
+<li>Science teacher at Khayati Tutorials</li>
+<li>working as science teacher for W.A.K.E. NGO
+</div>
+
+
+<div class="skills">
+<h3 style="text-align:center;margin-top:0px;">SKILLS</h3>
+C<font color="purple">__________</font>:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+<BR><BR>CORE JAVA<font color="purple">_</font>:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+<br><BR>HTML<font color="purple">______</font>:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+<br><BR>CSS<font color="purple">________</font>:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+<br><BR>JAVASCRIPT:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;COLOR:GRAY;"></i>
+   <i class="fas fa-square" style="margin-left:5px;COLOR:GRAY;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+<br><BR>mySQL<font color="purple">_____</font>:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;COLOR:GRAY;"></i>
+   <i class="fas fa-square" style="margin-left:5px;COLOR:GRAY;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+<BR><br>PHP<font color="purple">________</font>:<i class="fas fa-square"></i>
+   <i class="fas fa-square" style="margin-left:5px;"></i>
+   <i class="fas fa-square" style="margin-left:5px;COLOR:GRAY;"></i>
+   <i class="fas fa-square" style="margin-left:5px;COLOR:GRAY;"></i>
+   <i class="fas fa-square" style="margin-left:5px; COLOR:GRAY;"></i>
+</div>
+
+
+<div id="xyz"></div>
+<div id="abc" style="color:white;">
+<i class="fas fa-birthday-cake"></i><input type="text" id="date" placeholder="24-10-2000"><br><br>
+<i class="fas fa-home"></i>Borivali,Mumbai<br><br>
+<hr width="100%" size="5px" color="white">
+<hr width="80%" size="5px" color="white">
+<h3 style="text-align:center;" color="white">CONTACT</h3>
+<form onsubmit="return numvalidation()&& mailvalidation()">
+<i class="fas fa-mobile-alt"></i>:  
+<input type="text" id="phone" class="num" value="9757055636"><br><br>
+<i class="fas fa-envelope"></i>: <input type="text"  id="email" value="manalimaniyar@gmail.com"><br><br>
+<i class="fab fa-facebook-square"></i>: <input type="text" name="fbname" placeholder="Manali Maniyar"><br><br>
+<i class="fab fa-instagram"></i>: <input type="text" name="igname" placeholder="manali24._"><br>
+</div>
+<br>
+<input type="submit" class="button" value="Submit"/>
+</form>
+</body>
+</html>
